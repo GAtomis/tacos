@@ -2,7 +2,7 @@
  * @Description: interceptors
  * @Author: Gavin
  * @Date: 2022-02-11 23:05:18
- * @LastEditTime: 2023-07-04 13:41:29
+ * @LastEditTime: 2023-07-04 14:37:19
  * @LastEditors: GAtomis 850680822@qq.com
  */
 import utils from '../utils/utils'
@@ -21,7 +21,7 @@ export default class Interceptors {
       this.handlers[id] = null;
     }
   };
-  use(fulfilled, rejected) {
+  use(fulfilled, rejected?) {
     this.handlers.push({
       fulfilled,
       rejected

@@ -1,13 +1,13 @@
 {
   "name": "@gatomis/tacos",
-  "version": "0.0.1-beta.5",
+  "version": "0.0.1-beta.6",
   "type": "module",
   "description": "",
   "main": "lib/bundle.cjs.js",
   "module": "lib/bundle.esm.js",
   "types": "lib/types/main.d.ts",
   "scripts": {
-    "build": "rollup -c",
+    "build": "tsc;rollup -c",
     "build:types": "tsc"
   },
   "dependencies": {
