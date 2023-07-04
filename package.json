@@ -16,6 +16,7 @@
   "homepage": "https://github.com/GAtomis/tacos",
   "author": "https://github.com/GAtomis",
   "devDependencies": {
+    "@types/lodash-es":"^4.17.7",
     "@rollup/plugin-alias": "^5.0.0",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-json": "^6.0.0",

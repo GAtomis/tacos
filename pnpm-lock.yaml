@@ -7,7 +7,7 @@ specifiers:
   '@rollup/plugin-node-resolve': '^15.1.0 '
   '@rollup/plugin-terser': ^0.4.3
   '@rollup/plugin-typescript': ^11.1.1
-  '@tarojs/taro': ^3.6.8
+  '@types/lodash-es': ^4.17.7
   '@types/node': ^18.6.3
   lodash-es: ^4.17.21
   rollup: ^3.23.1
@@ -15,7 +15,6 @@ specifiers:
   typescript: ^5.1.3
 
 dependencies:
-  '@tarojs/taro': 3.6.8
   lodash-es: 4.17.21
 
 devDependencies:
@@ -25,19 +24,13 @@ devDependencies:
   '@rollup/plugin-node-resolve': 15.1.0_rollup@3.26.0
   '@rollup/plugin-terser': 0.4.3_rollup@3.26.0
   '@rollup/plugin-typescript': 11.1.2_sp5mowlzypnys7jlmrahxra75e
+  '@types/lodash-es': 4.17.7
   '@types/node': 18.16.19
   rollup: 3.26.0
   tslib: 2.6.0
   typescript: 5.1.6
 
 packages:
-
-  /@babel/runtime/7.22.5:
-    resolution: {integrity: sha512-ecjvYlnAaZ/KVneE/OdKYBYfgXV3Ptu6zQWmgEF7vwKhQnvVS6bjMD2XYgj+SNvQ1GfK/pjgokfPkC/2CO8CuA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.13.11
-    dev: false
 
   /@jridgewell/gen-mapping/0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
@@ -192,48 +185,18 @@ packages:
       rollup: 3.26.0
     dev: true
 
-  /@tarojs/api/3.6.8:
-    resolution: {integrity: sha512-j5bZ9MFbq+TSnV25OSB+ErYLpx9DEN6ptz3uh6fm/O3c1HLGAIqGSDb2GKdx9CFs5FhiIOuw9XWqgAnDXbkqbQ==}
-    dependencies:
-      '@babel/runtime': 7.22.5
-      '@tarojs/runtime': 3.6.8
-      '@tarojs/shared': 3.6.8
-    dev: false
-
-  /@tarojs/runtime/3.6.8:
-    resolution: {integrity: sha512-x1hEHiHDGKYFROaOebKnA0CKK0HPSACw+na2eSsFbzV3S5eLBT8s4ljDvoHwQ72o6ejkQgvu7ajog3qEB2tlcw==}
-    dependencies:
-      '@tarojs/shared': 3.6.8
-      lodash-es: 4.17.21
-    dev: false
-
-  /@tarojs/shared/3.6.8:
-    resolution: {integrity: sha512-niHYE2+9EtpfiLdJCdXiZ6ZirSNbPu5HaPMSZlRXYf1KzEWiyzGSpn/Cew4M3gbWti101xfVjNKZLTD9NlUmGg==}
-    dev: false
-
-  /@tarojs/taro/3.6.8:
-    resolution: {integrity: sha512-pylsuFNEExcwgbSx0DYbIvWQe9448PKZmtyDH+gMnfgsV3ZO9eZIhBfXJ/4MzFeFU0lsFAbkTfVsnDuugc+gAw==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/webpack': '*'
-      '@types/webpack-dev-server': '*'
-      vue: '*'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/webpack':
-        optional: true
-      '@types/webpack-dev-server':
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      '@tarojs/api': 3.6.8
-      '@tarojs/runtime': 3.6.8
-    dev: false
-
   /@types/estree/1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
+    dev: true
+
+  /@types/lodash-es/4.17.7:
+    resolution: {integrity: sha512-z0ptr6UI10VlU6l5MYhGwS4mC8DZyYer2mCoyysZtSF7p26zOX8UpbrV0YpNYLGS8K4PUFIyEr62IMFFjveSiQ==}
+    dependencies:
+      '@types/lodash': 4.14.195
+    dev: true
+
+  /@types/lodash/4.14.195:
+    resolution: {integrity: sha512-Hwx9EUgdwf2GLarOjQp5ZH8ZmblzcbTBC2wtQWNKARBSxM9ezRIAUpeDTgoQRAFB0+8CNWXVA9+MaSOzOF3nPg==}
     dev: true
 
   /@types/node/18.16.19:
@@ -392,10 +355,6 @@ packages:
     dependencies:
       safe-buffer: 5.2.1
     dev: true
-
-  /regenerator-runtime/0.13.11:
-    resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
-    dev: false
 
   /resolve/1.22.2:
     resolution: {integrity: sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==}
