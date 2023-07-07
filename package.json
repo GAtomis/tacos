@@ -1,6 +1,6 @@
 {
   "name": "@gatomis/tacos",
-  "version": "0.0.1-beta.6",
+  "version": "0.0.1-beta.8",
   "type": "module",
   "description": "",
   "main": "lib/bundle.cjs.js",
